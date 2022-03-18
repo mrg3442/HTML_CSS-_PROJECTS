@@ -1,0 +1,13 @@
+/* Sets font and font size for entire document*/
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+/*Form formatting*/
+#contact input[type="text"] {
+    width: 200px;
+    margin: 1px;
+    border: 1px solid blue;
+    border-radius: 15px;
+}
