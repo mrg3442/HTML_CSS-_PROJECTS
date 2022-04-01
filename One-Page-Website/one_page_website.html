@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>One Page Website</title>
 		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="./JS/one_page_website.js"></script>
 	</head>
 	<!--HEADING-->
 	<div>
@@ -20,20 +21,54 @@
 			</ul>
 		</div>
 	<!--END NAV-->
-	
-	<!--PICTURE 1-->
-	 <div id="picture">
-		<p>Here is a yummy bowl of Strawberries</p>
-		<img src="images/thumbnail_1.jpg" alt="Bowl of Strawberries">
-	 </div>
-	<!--END PICTURE-->
-	
-	<!--PICTURE 2-->
-	 <div>
-		<p>Heres some freshly cut Strawberries</p>
-		<img src="images/thumbnail_2.jpg" alt="Freshly cut Strawberries">
-	 </div>
-	<!--END PICTURE-->
+
+	<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="images/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="images/thumbnail_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 2</div>
+		<img src="images/thumbnail_1.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 2</div>
+		<img src="images/thumbnail_2.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="images/thumbnail_1.jpg" onclick="currentSlide(1)" alt="strawberries in bowl">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/thumbnail_2.jpg" onclick="currentSlide(2)" alt="strawberries">
+	  </div>>
+	  </div>
+	</div>
+  </div>
+
+
 	
 	<!--VIDEO-->
 	<div id="video">
