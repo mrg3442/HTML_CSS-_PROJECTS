@@ -137,24 +137,90 @@
 
 
       <!-- /showtimes -->
-    
-      <div id="deals">
-      <div class="text-center">
-        <form>
-            <h1 class="text-primary my-5">Sign up for Movie Club Rewards</h1>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
 
-            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-              Popover on top
-            </button>
-        </form>
+       <!--Alert for signup-->
+       <div class="alert alert-primary alert-dismissible fade show center-text" role="alert">
+        <strong>SIGN UP WITH MOVIE DEALS BUTTON BELOW</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--End alert-->
 
+      <!--jumbotron heading-->
+      <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+        <div class="container">
+          <h1 class="display-4 hidden-sm-down" style="color:#fff; font-family:roboto;font-weight:900;text-transform:uppercase;">
+          Movie Deals</h1>
+          <p class="lead">Check out our monthly deals....</p>
+          <!--Movie Deals-->
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals</button>
+          <!--/movie deals-->
+        </div>
       </div>
 
-      <div class="container my-5">
+
+    <!--Signup form-->
+      <div class="row">
+      <div class="container text-center col-md-6" id="deals">
+        <div class="container text-center">
+          <h4 class="display-5 my-4 col-lg-auto text-primary">Stay current on movies!</h4>
+          <div class="input-group mb-5 input-group-sm">
+            <input type="button" class="form-control" placeholder="Email">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-secondary btn-info popover-dismiss"
+                data-container="body" data-toggle="popover" data-placement="top"
+                data-content="Submit your email to recieve great movie reward deals!">
+              Sign up!
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End signup form-->
+
+    <!--Form module-->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Register to recieve movie deals</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"> 
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">First Name:</label>
+                <input type="text" class="form-control" id="firstname" placeholder="First Name....">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Last Name:</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name....">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Email....">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Password:</label>
+                <input type="text" class="form-control" id="password" placeholder="Password....">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end form module-->
+
+
+      <div class="container text-center" id="footer">
           <ul class="nav nav-inline">
                 <li class="nav-item">
                     <small><a class="nav-link active" href="#">Movie Rewards</a></small>
@@ -172,17 +238,7 @@
       </div>
       </div>
 
-      <!--jumbotron heading-->
-      <div class="jumpotron jumbotron-fluid bg-info mt-5 text-center">
-        <div class="container">
-          <h1 class="display-4 hidden-sm-down" style="color:#fff; font-family:roboto;font-weight:900;text-transform:uppercase;">
-          Movie Deals</h1>
-          <p class="lead">Check out our monthly deals....</p>
-          <!--Movie Deals-->
-          <button type="button" class="btn btn-outline-primary" data-toggle="model" data-target="#register">See our monthly movie deals</button>
-          <!--/movie deals-->
-        </div>
-      </div>
+      
 
 
 
